@@ -1,0 +1,153 @@
+@use "./styles/button.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  background: #252424;
+  color: #e5e7eb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+input,
+textarea {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+main {
+  width: min(1100px, 92%);
+  margin: 40px auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+
+
+
+
+
+}
+.navbar {
+
+  width: 100%;
+
+  padding: 1rem 2rem;
+
+  background: #161b22;
+
+  border-bottom: 1px solid #2a3348;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+}
+
+
+.navbar-logo a {
+
+  color: #e6edf3;
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+}
+
+
+.navbar-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1.5rem;
+
+
+  a {
+
+    color: #7d8590;
+
+
+    &:hover {
+
+      color: #ff2d78;
+
+    }
+
+  }
+
+}
+
+
+.navbar-logout {
+
+  background: transparent;
+
+  color: #ff2d78;
+
+  border: 1px solid #ff2d78;
+
+  padding: 0.5rem 1rem;
+
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+
+
+  &:hover {
+
+    background: rgba(255,45,120,0.1);
+
+  }
+
+}
+
